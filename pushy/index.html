@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/x-icon" href="./favicon.png">
+        <link rel="stylesheet" href="./style.css">
+        <script type="application/javascript" src="./client.js"></script>
+        <title>Server-Initiated Communication</title>
+    </head>
+    <body>
+        <section>
+            <label for="protocol-select">Protocol</label>
+            <select id="protocol-select">
+                <option value="push">Push Notifications</option>
+                <option value="sse">Server-Sent Events</option>
+                <option value="ws">Websockets</option>
+            </select>
+            <label for="username-input">Username</label>
+            <input id="username-input">
+            <button id="subscribe-button" type="button">Subscribe</button>
+        </section>
+        <section>
+            <label for="recipient-input">Recipient</label>
+            <input id="recipient-input" size="15" disabled>
+            <label for="message-input">Message</label>
+            <input id="message-input" size="50" disabled>
+            <button id="publish-button" type="button" disabled>Publish</button>
+        </section>
+        <section>
+            <label for="message-list">Messages</label>
+            <ul id="message-list"></ul>
+        </section>
+    </body>
+</html>

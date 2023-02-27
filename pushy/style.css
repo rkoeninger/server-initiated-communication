@@ -1,0 +1,14 @@
+body {
+    color: white;
+    background-color: black;
+    font-size: 18pt;
+}
+section {
+    margin: 24px;
+}
+section * {
+    margin: 4px;
+}
+ul {
+    font-family: monospace;
+}
